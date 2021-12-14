@@ -21,6 +21,8 @@ app.get("/",(req,res)=>{
     res.send("hello")
 })
 
-app.listen(8000,()=>{
+
+const port =process.env.PORT||8000
+app.listen(port,()=>{
     console.log("server listening");
 })
